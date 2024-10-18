@@ -7,7 +7,8 @@
     --gris: #6e6e6e;
     --verde: #25D366;
     --azul: #0a66c2;
-    --red: #fd4848;
+    --orange: #ff6a00;
+    --purple: #a097ff;
     --note: #75ccff;
 }
 
@@ -102,9 +103,16 @@ p {
 }
 
 .projects {
-    background-color: var(--red); /* Projects */
+    background-color: var(--orange); /* Credly */
 }
 
+.credly {
+    background-color: var(--orange); /* Credly */
+}
+
+.portafolio {
+    background-color: var(--purple); /* Portafolio */
+}
 
 /*footer*/
 .footer,
