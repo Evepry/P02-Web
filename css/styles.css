@@ -1,0 +1,114 @@
+:root {
+    --blanco: #ffffff;
+	--oscuro: #3b3b3b;
+	--primario: #ecc4f9;
+    --secundario: #a3e5ff;
+    --gris-claro: #bfbfbf;
+    --gris: #6e6e6e;
+    --verde: #25D366;
+    --azul: #0a66c2;
+    --red: #fd4848;
+    --note: #75ccff;
+}
+
+/* Globales */
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /* Implementaion de box model */
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, var(--primario) 0%, var(--primario) 7%, var(--secundario) 93%, var(--secundario) 100%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 80rem;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    background-color:var(--blanco);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px var(--blanco);
+    max-width: 400rem;
+    width: 100%;
+}
+
+.profile-header {
+    margin-bottom: 2rem;
+}
+
+
+.profile-image {
+    width: 100px;
+    border-radius: 50%;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: var(--oscuro);
+}
+
+p {
+    font-size: 14px;
+    color: var(--gris-claro);
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Hover genérico para todos los botones */
+.link-btn:hover {
+    background-color: var(--note);
+}
+
+/* Estilos personalizados para cada plataforma */
+.linkedin {
+    background-color: var(--azul); /* Linkedin */
+}
+
+.whatsapp {
+    background-color: var(--verde); /* Whatsapp */
+}
+
+.github {
+    background-color: var(--gris); /* Github */
+}
+
+.projects {
+    background-color: var(--red); /* Projects */
+}
+
+
+/*footer*/
+.footer,
+.footer p{
+    text-align: center;
+    color: var(--oscuro);
+}
